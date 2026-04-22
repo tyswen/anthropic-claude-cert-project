@@ -101,11 +101,11 @@ export function PreviewFrame() {
   if (error) {
     if (error === "firstLoad") {
       return (
-        <div className="h-full flex items-center justify-center p-8 bg-gray-50">
+        <div className="h-full flex items-center justify-center p-8 bg-gradient-to-br from-cyan-50 via-sky-50 to-indigo-50">
           <div className="text-center max-w-md">
-            <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-blue-100 mb-4">
+            <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-br from-cyan-200 to-sky-300 mb-4 shadow-sm">
               <svg
-                className="h-8 w-8 text-blue-600"
+                className="h-8 w-8 text-sky-700"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -118,13 +118,13 @@ export function PreviewFrame() {
                 />
               </svg>
             </div>
-            <h3 className="text-lg font-semibold text-gray-900 mb-2">
+            <h3 className="text-lg font-semibold text-sky-900 mb-2">
               Welcome to UI Generator
             </h3>
-            <p className="text-sm text-gray-600 mb-3">
+            <p className="text-sm text-sky-700 mb-3">
               Start building React components with AI assistance
             </p>
-            <p className="text-xs text-gray-500">
+            <p className="text-xs text-sky-500">
               Ask the AI to create your first component to see it live here
             </p>
           </div>
@@ -133,16 +133,16 @@ export function PreviewFrame() {
     }
 
     return (
-      <div className="h-full flex items-center justify-center p-8 bg-gray-50">
+      <div className="h-full flex items-center justify-center p-8 bg-gradient-to-br from-cyan-50 via-sky-50 to-indigo-50">
         <div className="text-center max-w-md">
-          <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gray-100 mb-4">
-            <AlertCircle className="h-8 w-8 text-gray-400" />
+          <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-sky-100 mb-4">
+            <AlertCircle className="h-8 w-8 text-sky-400" />
           </div>
-          <h3 className="text-lg font-semibold text-gray-900 mb-2">
+          <h3 className="text-lg font-semibold text-sky-900 mb-2">
             No Preview Available
           </h3>
-          <p className="text-sm text-gray-500">{error}</p>
-          <p className="text-xs text-gray-400 mt-2">
+          <p className="text-sm text-sky-600">{error}</p>
+          <p className="text-xs text-sky-400 mt-2">
             Start by creating a React component using the AI assistant
           </p>
         </div>
